@@ -371,7 +371,7 @@ static void printSensorsInfo(){
 
     // GPS measurements
     if(fix_status > 0 && fix_status <= 2){                                       // Print values only if there is a valid fix. ONLY 1 AND 2 ARE VALID
-        printf("Fix Status = %d, Time (UTC): %02d:%02d:%.1f, Alt = %.2f m, Lat = %.6f deg, Lon = %.6f deg\n\r", fix_status, gps_hour, gps_minute, gps_seconds, altitude, latitude, longitude);
+        printf("Fix Status = %d, Time (UTC + 1): %02d:%02d:%.1f, Alt = %.2f m, Lat = %.6f deg, Lon = %.6f deg\n\r", fix_status, gps_hour, gps_minute, gps_seconds, altitude, latitude, longitude);
     }else{
         printf("No GPS fix yet, please wait for signal...\n\r");
     }
